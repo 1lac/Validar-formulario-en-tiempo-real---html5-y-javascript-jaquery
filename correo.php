@@ -3,7 +3,7 @@
 		{	
 			if (isset($_COOKIE['dirweb'])) {
 				$cont=$_COOKIE['Country'];
-				$destinatario = "cosaslac@gmail.com"; 
+				$destinatario = "correoDel@destinatario.com"; 
 				$asunto = "Consulta de:".$_COOKIE['nombre']; 
 				$cuerpo = ' 
 				<html> 
@@ -28,10 +28,10 @@
 				$headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 
 				//dirección del remitente 
-				$headers .= "From: ".$_POST['nombre']." <prueba@ipuemurcia.com>\r\n"; 
+				$headers .= "From: ".$_POST['nombre']." <CorreoDel@remitente.com>\r\n"; 
 
 				//dirección de respuesta, si queremos que sea distinta que la del remitente 
-				$headers .= "Reply-To: prueba@ipuemurcia.com\r\n";
+				$headers .= "Reply-To: CorreoDel@remitente.com\r\n";
 
 				mail($destinatario,$asunto,$cuerpo,$headers);
 					echo "<script>alert('Consulta realizada con exito');</script>";
