@@ -193,7 +193,7 @@
                   </p>
           <?php
                require_once('recaptchalib.php');
-               $publickey = "6Lf-d98SAAAAANomxs75EPtP8sMV2BcaeiB73HYr"; // Ver archivo Datos_reCaptcha o generar key en https://www.google.com/recaptcha/admin/create
+               $publickey = "publickey"; // Ver archivo Datos_reCaptcha o generar key en https://www.google.com/recaptcha/admin/create
                echo recaptcha_get_html($publickey);
          ?>
          <input type="submit" name="enviar" id="enviar" value="Enviar">
